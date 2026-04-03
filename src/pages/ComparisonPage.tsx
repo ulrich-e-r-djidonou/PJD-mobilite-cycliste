@@ -22,8 +22,6 @@ interface Props {
   data: CyclingData;
 }
 
-const MONTHS_SHORT = ['Jan', 'Fév', 'Mar', 'Avr', 'Mai', 'Juin', 'Juil', 'Août', 'Sep', 'Oct', 'Nov', 'Déc'];
-
 export default function ComparisonPage({ data }: Props) {
   const [selectedCounter, setSelectedCounter] = useState(COUNTER_IDS[0]);
 
@@ -146,7 +144,7 @@ export default function ComparisonPage({ data }: Props) {
                 />
               ))}
               <Tooltip
-                formatter={(v: number, name: string) => [`${v} /100`, name]}
+                formatter={(v, name) => [`${Number(v)} /100`, String(name)]}
                 contentStyle={{ fontSize: 12, borderRadius: 8 }}
               />
               <Legend wrapperStyle={{ fontSize: 12 }} />
@@ -163,7 +161,7 @@ export default function ComparisonPage({ data }: Props) {
               <CartesianGrid strokeDasharray="3 3" stroke="#f1f5f9" horizontal={false} />
               <XAxis type="number" tick={{ fontSize: 11, fill: '#94a3b8' }} axisLine={false} tickLine={false} tickFormatter={(v) => `${v} %`} />
               <YAxis type="category" dataKey="name" tick={{ fontSize: 12, fill: '#475569' }} axisLine={false} tickLine={false} width={60} />
-              <Tooltip formatter={(v: number) => [`${v} %`, 'Part du total']} contentStyle={{ fontSize: 12, borderRadius: 8 }} />
+              <Tooltip formatter={(v) => [`${Number(v)} %`, 'Part du total']} contentStyle={{ fontSize: 12, borderRadius: 8 }} />
               <Bar dataKey="part" radius={[0, 4, 4, 0]}>
                 {shareData.map((entry, i) => (
                   <rect key={i} fill={entry.color} />

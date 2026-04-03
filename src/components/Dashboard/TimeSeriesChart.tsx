@@ -70,10 +70,10 @@ export default function TimeSeriesChart({ daily, year }: Props) {
             width={36}
           />
           <Tooltip
-            labelFormatter={formatTooltipDate}
-            formatter={(value: number, name: string) => [
-              new Intl.NumberFormat('fr-CA').format(value),
-              COUNTERS[name as keyof typeof COUNTERS]?.shortName ?? name,
+            labelFormatter={(label) => formatTooltipDate(String(label))}
+            formatter={(value, name) => [
+              new Intl.NumberFormat('fr-CA').format(Number(value)),
+              COUNTERS[name as keyof typeof COUNTERS]?.shortName ?? String(name),
             ]}
             contentStyle={{ fontSize: 12, borderRadius: 8, border: '1px solid #e2e8f0' }}
           />

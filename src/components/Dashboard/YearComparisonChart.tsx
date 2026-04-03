@@ -10,7 +10,7 @@ import {
   ReferenceLine,
 } from 'recharts';
 import type { MonthlyRecord } from '../../types';
-import { MONTHS_SHORT_FR, COUNTER_IDS, COUNTERS } from '../../types';
+import { MONTHS_SHORT_FR, COUNTERS } from '../../types';
 
 interface Props {
   monthly: MonthlyRecord[];
@@ -54,9 +54,9 @@ export default function YearComparisonChart({ monthly, counterId }: Props) {
             width={36}
           />
           <Tooltip
-            formatter={(value: number, name: string) => [
-              new Intl.NumberFormat('fr-CA').format(value),
-              name,
+            formatter={(value, name) => [
+              new Intl.NumberFormat('fr-CA').format(Number(value)),
+              String(name),
             ]}
             contentStyle={{ fontSize: 12, borderRadius: 8, border: '1px solid #e2e8f0' }}
           />

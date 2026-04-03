@@ -53,9 +53,9 @@ export default function SeasonalityChart({ monthly }: Props) {
             width={36}
           />
           <Tooltip
-            formatter={(value: number, name: string) => [
-              new Intl.NumberFormat('fr-CA').format(value),
-              COUNTERS[name as keyof typeof COUNTERS]?.shortName ?? name,
+            formatter={(value, name) => [
+              new Intl.NumberFormat('fr-CA').format(Number(value)),
+              COUNTERS[name as keyof typeof COUNTERS]?.shortName ?? String(name),
             ]}
             contentStyle={{ fontSize: 12, borderRadius: 8, border: '1px solid #e2e8f0' }}
           />
