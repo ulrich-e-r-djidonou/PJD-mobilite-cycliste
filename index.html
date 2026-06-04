@@ -5,7 +5,116 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobilité cycliste — Parc Jean-Drapeau</title>
-    <meta name="description" content="Dashboard d'analyse de la mobilité cycliste vers le Parc Jean-Drapeau, basé sur les données ouvertes de la Ville de Montréal (2023–2024)." />
+    <meta name="description" content="Dashboard d'analyse de la mobilité cycliste vers le Parc Jean-Drapeau, basé sur les données ouvertes de la Ville de Montréal (2023–2024). Comptages vélo, tendances saisonnières et flux d'accès à l'île." />
+    <meta name="author" content="Ulrich Djidonou" />
+    <meta name="keywords" content="mobilité cycliste, vélo, Parc Jean-Drapeau, Montréal, données ouvertes, Ville de Montréal, comptage vélo, transport actif, urbanisme, dashboard, cycling, bike traffic" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
+    <link rel="alternate" hreflang="fr" href="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
+    <link rel="alternate" hreflang="x-default" href="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
+    <meta property="og:site_name" content="Mobilité cycliste — Parc Jean-Drapeau" />
+    <meta property="og:title" content="Mobilité cycliste vers le Parc Jean-Drapeau" />
+    <meta property="og:description" content="Analyse de la mobilité cycliste vers le Parc Jean-Drapeau à partir des données ouvertes de la Ville de Montréal (2023–2024) : comptages vélo, tendances saisonnières et flux d'accès." />
+    <meta property="og:locale" content="fr_CA" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mobilité cycliste vers le Parc Jean-Drapeau" />
+    <meta name="twitter:description" content="Analyse de la mobilité cycliste vers le Parc Jean-Drapeau (données ouvertes Ville de Montréal, 2023–2024)." />
+    <meta name="twitter:creator" content="@ulrichdjidonou" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#website",
+          "url": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/",
+          "name": "Mobilité cycliste — Parc Jean-Drapeau",
+          "description": "Dashboard d'analyse de la mobilité cycliste vers le Parc Jean-Drapeau (données ouvertes Ville de Montréal, 2023–2024).",
+          "inLanguage": "fr",
+          "author": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author",
+          "name": "Ulrich Djidonou",
+          "url": "https://github.com/ulrich-e-r-djidonou",
+          "jobTitle": "Économiste",
+          "description": "Économiste spécialisé en inférence causale et machine learning, basé au Québec.",
+          "sameAs": [
+            "https://www.linkedin.com/in/ulrich-djidonou/",
+            "https://github.com/ulrich-e-r-djidonou"
+          ]
+        },
+        {
+          "@type": "Dataset",
+          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#dataset",
+          "name": "Mobilité cycliste vers le Parc Jean-Drapeau (2023–2024)",
+          "description": "Comptages de cyclistes et indicateurs de mobilité active vers le Parc Jean-Drapeau à Montréal, dérivés des données ouvertes de la Ville de Montréal pour 2023 et 2024.",
+          "url": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/",
+          "creator": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author" },
+          "temporalCoverage": "2023/2024",
+          "spatialCoverage": { "@type": "Place", "name": "Parc Jean-Drapeau, Montréal, Québec, Canada" },
+          "isBasedOn": "https://donnees.montreal.ca/",
+          "keywords": ["mobilité cycliste", "vélo", "comptage vélo", "transport actif", "Montréal", "Parc Jean-Drapeau", "données ouvertes"],
+          "license": "https://opensource.org/licenses/MIT",
+          "inLanguage": "fr",
+          "variableMeasured": [
+            { "@type": "PropertyValue", "name": "Comptage de cyclistes" },
+            { "@type": "PropertyValue", "name": "Variation saisonnière" },
+            { "@type": "PropertyValue", "name": "Flux d'accès à l'île" }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#webpage",
+          "url": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/",
+          "name": "Mobilité cycliste — Parc Jean-Drapeau",
+          "isPartOf": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#website" },
+          "about": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#dataset" },
+          "author": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author" },
+          "inLanguage": "fr"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Qu'est-ce que ce dashboard sur la mobilité cycliste au Parc Jean-Drapeau ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "C'est un tableau de bord interactif créé par l'économiste Ulrich Djidonou qui analyse la mobilité cycliste vers le Parc Jean-Drapeau à Montréal. Il s'appuie sur les données ouvertes de la Ville de Montréal pour 2023 et 2024 et visualise les comptages de vélos, les tendances saisonnières et les flux d'accès à l'île."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "D'où proviennent les données ?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Les données proviennent du portail de données ouvertes de la Ville de Montréal (donnees.montreal.ca) et couvrent les années 2023 et 2024. Elles incluent les comptages de cyclistes aux points d'accès vers le Parc Jean-Drapeau."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does this Parc Jean-Drapeau cycling dashboard show?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It is an interactive dashboard by economist Ulrich Djidonou analyzing bicycle mobility toward Parc Jean-Drapeau in Montreal, based on the City of Montreal open data for 2023 and 2024. It visualizes bike counts, seasonal trends, and access flows to the island."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <div id="root"></div>
