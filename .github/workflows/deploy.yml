@@ -28,6 +28,11 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      # Repli SPA : GitHub Pages sert 404.html pour toute URL sans fichier
+      # correspondant. En le faisant pointer sur index.html, les routes
+      # client (/comparaison, /saisonnalite) restent accessibles en acces direct.
+      - run: cp dist/index.html dist/404.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
