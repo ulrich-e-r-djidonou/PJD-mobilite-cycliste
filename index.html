@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; form-action 'none'; base-uri 'self'; object-src 'none'" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>Mobilité cycliste — Parc Jean-Drapeau</title>
     <meta name="description" content="Dashboard d'analyse de la mobilité cycliste vers le Parc Jean-Drapeau, basé sur les données ouvertes de la Ville de Montréal (2023–2024). Comptages vélo, tendances saisonnières et flux d'accès à l'île." />
     <meta name="author" content="Ulrich Djidonou" />
     <meta name="keywords" content="mobilité cycliste, vélo, Parc Jean-Drapeau, Montréal, données ouvertes, Ville de Montréal, comptage vélo, transport actif, urbanisme, dashboard, cycling, bike traffic" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
-    <link rel="alternate" hreflang="fr" href="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
-    <link rel="alternate" hreflang="x-default" href="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
+    <link rel="canonical" href="https://djidonou.com/PJD-mobilite-cycliste/" />
+    <link rel="alternate" hreflang="fr" href="https://djidonou.com/PJD-mobilite-cycliste/" />
+    <link rel="alternate" hreflang="x-default" href="https://djidonou.com/PJD-mobilite-cycliste/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/" />
+    <meta property="og:url" content="https://djidonou.com/PJD-mobilite-cycliste/" />
     <meta property="og:site_name" content="Mobilité cycliste — Parc Jean-Drapeau" />
     <meta property="og:title" content="Mobilité cycliste vers le Parc Jean-Drapeau" />
     <meta property="og:description" content="Analyse de la mobilité cycliste vers le Parc Jean-Drapeau à partir des données ouvertes de la Ville de Montréal (2023–2024) : comptages vélo, tendances saisonnières et flux d'accès." />
@@ -34,16 +36,16 @@
       "@graph": [
         {
           "@type": "WebSite",
-          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#website",
-          "url": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/",
+          "@id": "https://djidonou.com/PJD-mobilite-cycliste/#website",
+          "url": "https://djidonou.com/PJD-mobilite-cycliste/",
           "name": "Mobilité cycliste — Parc Jean-Drapeau",
           "description": "Dashboard d'analyse de la mobilité cycliste vers le Parc Jean-Drapeau (données ouvertes Ville de Montréal, 2023–2024).",
           "inLanguage": "fr",
-          "author": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author" }
+          "author": { "@id": "https://djidonou.com/PJD-mobilite-cycliste/#author" }
         },
         {
           "@type": "Person",
-          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author",
+          "@id": "https://djidonou.com/PJD-mobilite-cycliste/#author",
           "name": "Ulrich Djidonou",
           "url": "https://github.com/ulrich-e-r-djidonou",
           "jobTitle": "Économiste",
@@ -55,11 +57,11 @@
         },
         {
           "@type": "Dataset",
-          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#dataset",
+          "@id": "https://djidonou.com/PJD-mobilite-cycliste/#dataset",
           "name": "Mobilité cycliste vers le Parc Jean-Drapeau (2023–2024)",
           "description": "Comptages de cyclistes et indicateurs de mobilité active vers le Parc Jean-Drapeau à Montréal, dérivés des données ouvertes de la Ville de Montréal pour 2023 et 2024.",
-          "url": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/",
-          "creator": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author" },
+          "url": "https://djidonou.com/PJD-mobilite-cycliste/",
+          "creator": { "@id": "https://djidonou.com/PJD-mobilite-cycliste/#author" },
           "temporalCoverage": "2023/2024",
           "spatialCoverage": { "@type": "Place", "name": "Parc Jean-Drapeau, Montréal, Québec, Canada" },
           "isBasedOn": "https://donnees.montreal.ca/",
@@ -74,17 +76,17 @@
         },
         {
           "@type": "WebPage",
-          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#webpage",
-          "url": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/",
+          "@id": "https://djidonou.com/PJD-mobilite-cycliste/#webpage",
+          "url": "https://djidonou.com/PJD-mobilite-cycliste/",
           "name": "Mobilité cycliste — Parc Jean-Drapeau",
-          "isPartOf": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#website" },
-          "about": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#dataset" },
-          "author": { "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#author" },
+          "isPartOf": { "@id": "https://djidonou.com/PJD-mobilite-cycliste/#website" },
+          "about": { "@id": "https://djidonou.com/PJD-mobilite-cycliste/#dataset" },
+          "author": { "@id": "https://djidonou.com/PJD-mobilite-cycliste/#author" },
           "inLanguage": "fr"
         },
         {
           "@type": "FAQPage",
-          "@id": "https://ulrich-e-r-djidonou.github.io/PJD-mobilite-cycliste/#faq",
+          "@id": "https://djidonou.com/PJD-mobilite-cycliste/#faq",
           "mainEntity": [
             {
               "@type": "Question",
