@@ -50,7 +50,7 @@ export default function YearComparisonChart({ monthly, counterId }: Props) {
             tick={{ fontSize: 11, fill: '#94a3b8' }}
             axisLine={false}
             tickLine={false}
-            tickFormatter={(v) => v >= 1000 ? `${(v / 1000).toFixed(0)}k` : String(v)}
+            tickFormatter={(v) => v >= 1000 ? `${(v / 1000).toLocaleString('fr-CA', { maximumFractionDigits: 1 })}k` : String(v)}
             width={36}
           />
           <Tooltip

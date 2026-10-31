@@ -37,8 +37,8 @@ export default function OverviewPage({ data }: Props) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 py-6 space-y-6">
-      {/* Page header */}
-      <div className="flex items-center justify-between">
+      {/* Page header : le choix d'annee passe sous le titre quand la place manque */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <h1 className="text-xl font-bold text-slate-900">Vue d'ensemble</h1>
           <p className="text-sm text-slate-500 mt-0.5">
